@@ -1,0 +1,71 @@
+/* Общие стили для контейнера row */
+.row {
+  margin: 20px;
+}
+
+/* Стили для карточек */
+.cards {
+  padding: 0;
+  list-style: none;
+}
+
+.cards li {
+  display: inline-block;
+  margin-right: 10px;
+}
+
+.card {
+  display: inline-block;
+  width: 30px;
+  height: 20px;
+  padding: 5px;
+  border: 1px solid #ccc;
+  cursor: pointer;
+}
+
+/* Заменяем span с классом card на img с классом card */
+.cards img {
+  width: 30px; /* Задаем ширину изображения */
+  height: 20px; /* Задаем высоту изображения */
+  margin-right: 10px; /* Отступ между изображениями */
+}
+
+/* Стили для формы */
+#form {
+  margin-top: 20px;
+}
+
+.form-group {
+  margin-bottom: 15px;
+  display: flex;
+}
+
+.form-control {
+  flex: 1;
+  max-width: 200px;
+  margin-right: 10px;
+}
+
+#submitform {
+  display: inline-block;
+  padding: 10px 15px;
+  background-color: #5cb85c;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+#submitform:hover {
+  background-color: #4cae4c;
+}
+
+.valid-card {
+  border: 2px solid green; /* Пример граничной рамки зеленого цвета для подтвержденной карты */
+  box-shadow: 0 0 5px green; /* Пример тени зеленого цвета для подтвержденной карты */
+}
+
+/* Добавляем стили для серых карт при отсутствии класса valid-card */
+.card:not(.valid-card) {
+  filter: grayscale(100%);
+}
